@@ -22,7 +22,7 @@ export class RegistrationComponent implements OnInit, OnChanges {
   constructor( private router: Router, private facade: AppUserFacade, private fb: FormBuilder) { }
 
   ngOnInit(): void {
-    if(!this.updateRecord) this.addAddress()
+    if(!this.updateRecord) this.addAddress();
   }
 
   ngOnChanges() {
